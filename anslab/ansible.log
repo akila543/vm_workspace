@@ -1,0 +1,555 @@
+2018-07-27 11:50:11,695 p=2547 u=akila |  localhost | SUCCESS | rc=0 >>
+hello
+
+2018-07-27 12:10:08,227 p=3103 u=akila |  PLAY [localhost] ***************************************************************
+2018-07-27 12:10:08,251 p=3103 u=akila |  TASK [Gathering Facts] *********************************************************
+2018-07-27 12:10:09,678 p=3103 u=akila |  ok: [localhost]
+2018-07-27 12:10:09,727 p=3103 u=akila |  TASK [Copy content of tomcat tar file] *****************************************
+2018-07-27 12:10:11,048 p=3103 u=akila |  changed: [localhost]
+2018-07-27 12:10:11,107 p=3103 u=akila |  TASK [Unarchive the tomcat file] ***********************************************
+2018-07-27 12:10:11,191 p=3103 u=akila |  fatal: [localhost]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/akila/Downloads/apache-tomcat-8.5.32' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2018-07-27 12:10:11,195 p=3103 u=akila |  	to retry, use: --limit @/home/akila/anslab/tomcat.retry
+
+2018-07-27 12:10:11,195 p=3103 u=akila |  PLAY RECAP *********************************************************************
+2018-07-27 12:10:11,196 p=3103 u=akila |  localhost                  : ok=2    changed=1    unreachable=0    failed=1   
+2018-07-27 12:11:53,803 p=3258 u=akila |  PLAY [localhost] ***************************************************************
+2018-07-27 12:11:53,825 p=3258 u=akila |  TASK [Gathering Facts] *********************************************************
+2018-07-27 12:11:54,965 p=3258 u=akila |  ok: [localhost]
+2018-07-27 12:11:55,006 p=3258 u=akila |  TASK [Copy content of tomcat tar file] *****************************************
+2018-07-27 12:11:56,201 p=3258 u=akila |  ok: [localhost]
+2018-07-27 12:11:56,236 p=3258 u=akila |  TASK [Unarchive the tomcat file] ***********************************************
+2018-07-27 12:11:56,310 p=3258 u=akila |  fatal: [localhost]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/akila/tomcat/apache-tomcat-8.5.32.tar.gz' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2018-07-27 12:11:56,313 p=3258 u=akila |  	to retry, use: --limit @/home/akila/anslab/tomcat.retry
+
+2018-07-27 12:11:56,314 p=3258 u=akila |  PLAY RECAP *********************************************************************
+2018-07-27 12:11:56,314 p=3258 u=akila |  localhost                  : ok=2    changed=0    unreachable=0    failed=1   
+2018-07-27 12:12:50,379 p=3395 u=akila |  PLAY [localhost] ****************************************************************************************
+2018-07-27 12:12:50,392 p=3395 u=akila |  TASK [Gathering Facts] **********************************************************************************
+2018-07-27 12:12:51,125 p=3395 u=akila |  ok: [localhost]
+2018-07-27 12:12:51,144 p=3395 u=akila |  TASK [Copy content of tomcat tar file] ******************************************************************
+2018-07-27 12:12:51,910 p=3395 u=akila |  ok: [localhost]
+2018-07-27 12:12:51,930 p=3395 u=akila |  TASK [Unarchive the tomcat file] ************************************************************************
+2018-07-27 12:12:53,008 p=3395 u=akila |  changed: [localhost]
+2018-07-27 12:12:53,012 p=3395 u=akila |  PLAY RECAP **********************************************************************************************
+2018-07-27 12:12:53,012 p=3395 u=akila |  localhost                  : ok=3    changed=1    unreachable=0    failed=0   
+2018-07-27 12:24:57,231 p=1921 u=akila |  PLAY [localhost] ***************************************************************************************************
+2018-07-27 12:24:57,444 p=1921 u=akila |  TASK [Gathering Facts] *********************************************************************************************
+2018-07-27 12:24:59,162 p=1921 u=akila |  ok: [localhost]
+2018-07-27 12:24:59,235 p=1921 u=akila |  TASK [Copy content of tomcat tar file] *****************************************************************************
+2018-07-27 12:25:01,302 p=1921 u=akila |  ok: [localhost]
+2018-07-27 12:25:01,365 p=1921 u=akila |  TASK [Unarchive the tomcat file] ***********************************************************************************
+2018-07-27 12:25:03,745 p=1921 u=akila |  ok: [localhost]
+2018-07-27 12:25:03,832 p=1921 u=akila |  TASK [Change default port address] *********************************************************************************
+2018-07-27 12:25:03,996 p=1921 u=akila |  fatal: [localhost]: FAILED! => {"changed": false, "msg": "Could not find or access '/home/akila/anslab/server.xml.j2' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2018-07-27 12:25:03,999 p=1921 u=akila |  	to retry, use: --limit @/home/akila/anslab/tomcat.retry
+
+2018-07-27 12:25:04,000 p=1921 u=akila |  PLAY RECAP *********************************************************************************************************
+2018-07-27 12:25:04,000 p=1921 u=akila |  localhost                  : ok=3    changed=0    unreachable=0    failed=1   
+2018-07-27 12:25:30,467 p=2132 u=akila |  PLAY [localhost] ***************************************************************************************************
+2018-07-27 12:25:30,503 p=2132 u=akila |  TASK [Gathering Facts] *********************************************************************************************
+2018-07-27 12:25:31,481 p=2132 u=akila |  ok: [localhost]
+2018-07-27 12:25:31,519 p=2132 u=akila |  TASK [Copy content of tomcat tar file] *****************************************************************************
+2018-07-27 12:25:32,376 p=2132 u=akila |  ok: [localhost]
+2018-07-27 12:25:32,415 p=2132 u=akila |  TASK [Unarchive the tomcat file] ***********************************************************************************
+2018-07-27 12:25:33,344 p=2132 u=akila |  ok: [localhost]
+2018-07-27 12:25:33,376 p=2132 u=akila |  TASK [Change default port address] *********************************************************************************
+2018-07-27 12:25:33,941 p=2132 u=akila |  changed: [localhost]
+2018-07-27 12:25:33,943 p=2132 u=akila |  PLAY RECAP *********************************************************************************************************
+2018-07-27 12:25:33,944 p=2132 u=akila |  localhost                  : ok=4    changed=1    unreachable=0    failed=0   
+2018-07-27 12:27:25,763 p=2341 u=akila |  ERROR! Syntax Error while loading YAML.
+  could not find expected ':'
+
+The error appears to have been in '/home/akila/anslab/tomcat.yml': line 17, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      dest:/home/akila/anslab/tomcat/apache-tomcat-8.5.32/conf/server.xml
+  - name: Start tomcat service
+  ^ here
+
+2018-07-27 12:28:15,920 p=2352 u=akila |   [WARNING]: Ignoring invalid attribute: mode
+
+2018-07-27 12:28:16,192 p=2352 u=akila |  PLAY [localhost] ***************************************************************
+2018-07-27 12:28:16,213 p=2352 u=akila |  TASK [Gathering Facts] *********************************************************
+2018-07-27 12:28:17,378 p=2352 u=akila |  ok: [localhost]
+2018-07-27 12:28:17,451 p=2352 u=akila |  TASK [Copy content of tomcat tar file] *****************************************
+2018-07-27 12:28:18,719 p=2352 u=akila |  ok: [localhost]
+2018-07-27 12:28:18,781 p=2352 u=akila |  TASK [Unarchive the tomcat file] ***********************************************
+2018-07-27 12:28:20,391 p=2352 u=akila |  changed: [localhost]
+2018-07-27 12:28:20,447 p=2352 u=akila |  TASK [Change default port address] *********************************************
+2018-07-27 12:28:21,151 p=2352 u=akila |  changed: [localhost]
+2018-07-27 12:28:21,218 p=2352 u=akila |  TASK [Start tomcat service] ****************************************************
+2018-07-27 12:28:21,796 p=2352 u=akila |  changed: [localhost]
+2018-07-27 12:28:21,801 p=2352 u=akila |  PLAY RECAP *********************************************************************
+2018-07-27 12:28:21,801 p=2352 u=akila |  localhost                  : ok=5    changed=3    unreachable=0    failed=0   
+2018-07-27 12:41:54,633 p=4947 u=akila |   [WARNING]: Ignoring invalid attribute: mode
+
+2018-07-27 12:41:54,925 p=4947 u=akila |  PLAY [localhost] ***************************************************************
+2018-07-27 12:41:54,947 p=4947 u=akila |  TASK [Gathering Facts] *********************************************************
+2018-07-27 12:41:56,636 p=4947 u=akila |  ok: [localhost]
+2018-07-27 12:41:56,682 p=4947 u=akila |  TASK [Copy content of tomcat tar file] *****************************************
+2018-07-27 12:41:57,911 p=4947 u=akila |  ok: [localhost]
+2018-07-27 12:41:57,952 p=4947 u=akila |  TASK [Unarchive the tomcat file] ***********************************************
+2018-07-27 12:41:59,638 p=4947 u=akila |  changed: [localhost]
+2018-07-27 12:41:59,686 p=4947 u=akila |  TASK [Start tomcat service] ****************************************************
+2018-07-27 12:42:00,358 p=4947 u=akila |  changed: [localhost]
+2018-07-27 12:42:00,366 p=4947 u=akila |  PLAY RECAP *********************************************************************
+2018-07-27 12:42:00,367 p=4947 u=akila |  localhost                  : ok=4    changed=2    unreachable=0    failed=0   
+2018-07-27 12:43:45,986 p=5203 u=akila |   [WARNING]: Ignoring invalid attribute: mode
+
+2018-07-27 12:43:46,200 p=5203 u=akila |  PLAY [localhost] ***************************************************************
+2018-07-27 12:43:46,222 p=5203 u=akila |  TASK [Gathering Facts] *********************************************************
+2018-07-27 12:43:47,079 p=5203 u=akila |  ok: [localhost]
+2018-07-27 12:43:47,107 p=5203 u=akila |  TASK [Copy content of tomcat tar file] *****************************************
+2018-07-27 12:43:47,955 p=5203 u=akila |  ok: [localhost]
+2018-07-27 12:43:48,005 p=5203 u=akila |  TASK [Unarchive the tomcat file] ***********************************************
+2018-07-27 12:43:48,948 p=5203 u=akila |  ok: [localhost]
+2018-07-27 12:43:48,984 p=5203 u=akila |  TASK [Start tomcat service] ****************************************************
+2018-07-27 12:43:49,347 p=5203 u=akila |  changed: [localhost]
+2018-07-27 12:43:49,353 p=5203 u=akila |  PLAY RECAP *********************************************************************
+2018-07-27 12:43:49,354 p=5203 u=akila |  localhost                  : ok=4    changed=1    unreachable=0    failed=0   
+2018-07-27 15:32:58,141 p=5904 u=akila |   [WARNING]: Ignoring invalid attribute: mode
+
+2018-07-27 15:32:58,476 p=5904 u=akila |  PLAY [localhost] ***************************************************************
+2018-07-27 15:32:58,516 p=5904 u=akila |  TASK [Gathering Facts] *********************************************************
+2018-07-27 15:32:59,884 p=5904 u=akila |  ok: [localhost]
+2018-07-27 15:32:59,945 p=5904 u=akila |  TASK [Copy content of tomcat tar file] *****************************************
+2018-07-27 15:33:01,330 p=5904 u=akila |  ok: [localhost]
+2018-07-27 15:33:01,409 p=5904 u=akila |  TASK [Unarchive the tomcat file] ***********************************************
+2018-07-27 15:33:02,793 p=5904 u=akila |  ok: [localhost]
+2018-07-27 15:33:02,869 p=5904 u=akila |  TASK [Start tomcat service] ****************************************************
+2018-07-27 15:33:03,519 p=5904 u=akila |  changed: [localhost]
+2018-07-27 15:33:03,528 p=5904 u=akila |  PLAY RECAP *********************************************************************
+2018-07-27 15:33:03,528 p=5904 u=akila |  localhost                  : ok=4    changed=1    unreachable=0    failed=0   
+2018-07-27 18:40:35,720 p=6676 u=akila |  PLAY [localhost] ***************************************************************
+2018-07-27 18:40:35,736 p=6676 u=akila |  TASK [Gathering Facts] *********************************************************
+2018-07-27 18:40:36,831 p=6676 u=akila |  ok: [localhost]
+2018-07-27 18:40:36,850 p=6676 u=akila |  TASK [Create folder] ***********************************************************
+2018-07-27 18:40:37,176 p=6676 u=akila |  changed: [localhost]
+2018-07-27 18:40:37,178 p=6676 u=akila |  RUNNING HANDLER [Create files inside the folder] *******************************
+2018-07-27 18:40:37,419 p=6676 u=akila |  changed: [localhost]
+2018-07-27 18:40:37,422 p=6676 u=akila |  PLAY RECAP *********************************************************************
+2018-07-27 18:40:37,423 p=6676 u=akila |  localhost                  : ok=3    changed=2    unreachable=0    failed=0   
+2018-07-27 18:41:37,915 p=6802 u=akila |  PLAY [localhost] ***************************************************************
+2018-07-27 18:41:37,931 p=6802 u=akila |  TASK [Gathering Facts] *********************************************************
+2018-07-27 18:41:38,700 p=6802 u=akila |  ok: [localhost]
+2018-07-27 18:41:38,727 p=6802 u=akila |  TASK [Create folder] ***********************************************************
+2018-07-27 18:41:39,067 p=6802 u=akila |  ok: [localhost]
+2018-07-27 18:41:39,069 p=6802 u=akila |  PLAY RECAP *********************************************************************
+2018-07-27 18:41:39,070 p=6802 u=akila |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2018-07-27 18:41:48,070 p=6883 u=akila |  PLAY [localhost] ***************************************************************
+2018-07-27 18:41:48,110 p=6883 u=akila |  TASK [Gathering Facts] *********************************************************
+2018-07-27 18:41:49,263 p=6883 u=akila |  ok: [localhost]
+2018-07-27 18:41:49,343 p=6883 u=akila |  TASK [Create folder] ***********************************************************
+2018-07-27 18:41:49,933 p=6883 u=akila |  changed: [localhost]
+2018-07-27 18:41:49,934 p=6883 u=akila |  RUNNING HANDLER [Create files inside the folder] *******************************
+2018-07-27 18:41:50,438 p=6883 u=akila |  changed: [localhost]
+2018-07-27 18:41:50,443 p=6883 u=akila |  PLAY RECAP *********************************************************************
+2018-07-27 18:41:50,443 p=6883 u=akila |  localhost                  : ok=3    changed=2    unreachable=0    failed=0   
+2018-07-29 21:06:31,617 p=7638 u=akila |  ERROR! Syntax Error while loading YAML.
+  could not find expected ':'
+
+The error appears to have been in '/home/akila/anslab/roles/sample/tasks/main.yaml': line 6, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  notify
+  - Create files inside the folder
+  ^ here
+
+2018-07-29 21:08:40,391 p=7665 u=akila |  PLAY [localhost] ***************************************************************
+2018-07-29 21:08:40,411 p=7665 u=akila |  TASK [Gathering Facts] *********************************************************
+2018-07-29 21:08:41,362 p=7665 u=akila |  ok: [localhost]
+2018-07-29 21:08:41,388 p=7665 u=akila |  TASK [sample : Create folder] **************************************************
+2018-07-29 21:08:41,776 p=7665 u=akila |  ERROR! The requested handler 'Create files inside the folder' was not found in either the main handlers list nor in the listening handlers list
+2018-07-29 21:09:25,778 p=7756 u=akila |  PLAY [localhost] ***************************************************************
+2018-07-29 21:09:25,797 p=7756 u=akila |  TASK [Gathering Facts] *********************************************************
+2018-07-29 21:09:26,790 p=7756 u=akila |  ok: [localhost]
+2018-07-29 21:09:26,826 p=7756 u=akila |  TASK [sample : Create folder] **************************************************
+2018-07-29 21:09:27,256 p=7756 u=akila |  changed: [localhost]
+2018-07-29 21:09:27,257 p=7756 u=akila |  RUNNING HANDLER [sample : Create files inside the folder] **********************
+2018-07-29 21:09:27,570 p=7756 u=akila |  changed: [localhost]
+2018-07-29 21:09:27,572 p=7756 u=akila |  PLAY RECAP *********************************************************************
+2018-07-29 21:09:27,573 p=7756 u=akila |  localhost                  : ok=3    changed=2    unreachable=0    failed=0   
+2018-07-29 22:05:45,749 p=8484 u=akila |  ERROR! Missing required action
+2018-07-29 22:05:59,873 p=8490 u=akila |  - roles/newrole was created successfully
+2018-07-29 23:56:26,550 p=8911 u=akila |  - roles/tomcat was created successfully
+2018-07-30 00:10:43,499 p=9101 u=akila |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/home/akila/anslab/roles/tomcat/tasks/main.yml': line 1, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- hosts: localhost
+  ^ here
+
+2018-07-30 00:13:00,497 p=9163 u=akila |  ERROR! The tasks/main.yml file for role 'tomcat' must contain a list of tasks
+
+The error appears to have been in '/home/akila/anslab/roles/tomcat/tasks/main.yml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+  tasks:
+  ^ here
+
+2018-07-30 00:14:42,047 p=9183 u=akila |  ERROR! The tasks/main.yml file for role 'tomcat' must contain a list of tasks
+
+The error appears to have been in '/home/akila/anslab/roles/tomcat/tasks/main.yml': line 1, column 2, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+ tasks:
+ ^ here
+
+2018-07-30 00:15:41,163 p=9200 u=akila |   [WARNING]: Ignoring invalid attribute: mode
+
+2018-07-30 00:15:41,470 p=9200 u=akila |  PLAY [localhost] *************************************************************************************
+2018-07-30 00:15:41,508 p=9200 u=akila |  TASK [Gathering Facts] *******************************************************************************
+2018-07-30 00:15:42,631 p=9200 u=akila |  ok: [localhost]
+2018-07-30 00:15:42,701 p=9200 u=akila |  TASK [tomcat : Unarchive the tomcat file] ************************************************************
+2018-07-30 00:15:43,212 p=9200 u=akila |  fatal: [localhost]: FAILED! => {"changed": false, "msg": "dest '/home/akila/anslab/tomcat' must be an existing dir"}
+2018-07-30 00:15:43,216 p=9200 u=akila |  	to retry, use: --limit @/home/akila/anslab/roles/tomcat/tomcat.retry
+
+2018-07-30 00:15:43,217 p=9200 u=akila |  PLAY RECAP *******************************************************************************************
+2018-07-30 00:15:43,217 p=9200 u=akila |  localhost                  : ok=1    changed=0    unreachable=0    failed=1   
+2018-07-30 00:16:03,340 p=9281 u=akila |   [WARNING]: Ignoring invalid attribute: mode
+
+2018-07-30 00:16:03,719 p=9281 u=akila |  PLAY [localhost] *************************************************************************************
+2018-07-30 00:16:03,741 p=9281 u=akila |  TASK [Gathering Facts] *******************************************************************************
+2018-07-30 00:16:04,981 p=9281 u=akila |  ok: [localhost]
+2018-07-30 00:16:05,048 p=9281 u=akila |  TASK [tomcat : Unarchive the tomcat file] ************************************************************
+2018-07-30 00:16:06,679 p=9281 u=akila |  changed: [localhost]
+2018-07-30 00:16:06,744 p=9281 u=akila |  TASK [tomcat : Start tomcat service] *****************************************************************
+2018-07-30 00:16:07,253 p=9281 u=akila |  changed: [localhost]
+2018-07-30 00:16:07,262 p=9281 u=akila |  PLAY RECAP *******************************************************************************************
+2018-07-30 00:16:07,262 p=9281 u=akila |  localhost                  : ok=3    changed=2    unreachable=0    failed=0   
+2018-07-30 00:34:13,609 p=9577 u=akila |  ERROR! 'unarchive' is not a valid attribute for a Play
+
+The error appears to have been in '/home/akila/anslab/roles/tomcat/tasks/main.yml': line 1, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+  - name: Unarchive the tomcat file
+    ^ here
+
+2018-07-30 00:35:40,748 p=9586 u=akila |  ERROR! Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to have been in '/home/akila/anslab/roles/tomcat/tasks/main.yml': line 5, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      dest: "{{tomcat_home}}/tomcat"
+  - name: Start tomcat service
+  ^ here
+
+2018-07-30 00:36:20,466 p=9597 u=akila |  ERROR! 'unarchive' is not a valid attribute for a Play
+
+The error appears to have been in '/home/akila/anslab/roles/tomcat/tasks/main.yml': line 1, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+ - name: Unarchive the tomcat file
+   ^ here
+
+2018-07-30 00:38:13,554 p=9626 u=akila |  ERROR! 'unarchive' is not a valid attribute for a Play
+
+The error appears to have been in '/home/akila/anslab/roles/tomcat/tasks/main.yml': line 1, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+  - name: Unarchive the tomcat file
+    ^ here
+
+2018-07-30 00:38:58,152 p=9633 u=akila |  ERROR! 'unarchive' is not a valid attribute for a Play
+
+The error appears to have been in '/home/akila/anslab/roles/tomcat/tasks/main.yml': line 1, column 4, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+ - name: Unarchive the tomcat file
+   ^ here
+
+2018-07-30 00:44:23,227 p=9701 u=akila |  ERROR! 'unarchive' is not a valid attribute for a Play
+
+The error appears to have been in '/home/akila/anslab/roles/tomcat/tasks/main.yml': line 1, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Untar the tomcat file
+  ^ here
+
+2018-07-30 00:45:25,538 p=9710 u=akila |  ERROR! 'unarchive' is not a valid attribute for a Play
+
+The error appears to have been in '/home/akila/anslab/roles/tomcat/tasks/main.yml': line 1, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+  - name: Untar the tomcat file
+    ^ here
+
+2018-07-30 00:47:19,800 p=9795 u=akila |  ERROR! 'unarchive' is not a valid attribute for a Play
+
+The error appears to have been in '/home/akila/anslab/roles/tomcat/tasks/main.yml': line 1, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Unarchive the tomcat file
+  ^ here
+
+2018-07-30 00:48:03,951 p=9817 u=akila |  ERROR! 'unarchive' is not a valid attribute for a Play
+
+The error appears to have been in '/home/akila/anslab/roles/tomcat/tasks/main.yml': line 1, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Unarchive the tomcat file
+  ^ here
+
+2018-07-30 00:49:59,280 p=9858 u=akila |  ERROR! 'file' is not a valid attribute for a Play
+
+The error appears to have been in '/home/akila/anslab/roles/tomcat/tasks/main.yml': line 1, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Create folder
+  ^ here
+
+2018-07-30 00:50:30,346 p=9868 u=akila |  ERROR! 'file' is not a valid attribute for a Play
+
+The error appears to have been in '/home/akila/anslab/roles/sample/tasks/main.yaml': line 1, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Create folder
+  ^ here
+
+2018-07-30 00:53:48,959 p=9910 u=akila |  PLAY [localhost] ***************************************************************
+2018-07-30 00:53:49,003 p=9910 u=akila |  TASK [Gathering Facts] *********************************************************
+2018-07-30 00:53:50,300 p=9910 u=akila |  ok: [localhost]
+2018-07-30 00:53:50,368 p=9910 u=akila |  TASK [sample : Create folder] **************************************************
+2018-07-30 00:53:50,946 p=9910 u=akila |  changed: [localhost]
+2018-07-30 00:53:50,947 p=9910 u=akila |  RUNNING HANDLER [sample : Create files inside the folder] **********************
+2018-07-30 00:53:51,331 p=9910 u=akila |  changed: [localhost]
+2018-07-30 00:53:51,336 p=9910 u=akila |  PLAY RECAP *********************************************************************
+2018-07-30 00:53:51,337 p=9910 u=akila |  localhost                  : ok=3    changed=2    unreachable=0    failed=0   
+2018-07-30 01:02:48,236 p=10080 u=akila |  ERROR! the playbook: roles/tomcat/ls could not be found
+2018-07-30 01:03:18,827 p=10096 u=akila |   [WARNING]: Ignoring invalid attribute: mode
+
+2018-07-30 01:03:19,134 p=10096 u=akila |  PLAY [localhost] ***************************************************************
+2018-07-30 01:03:19,158 p=10096 u=akila |  TASK [Gathering Facts] *********************************************************
+2018-07-30 01:03:20,217 p=10096 u=akila |  ok: [localhost]
+2018-07-30 01:03:20,251 p=10096 u=akila |  TASK [tomcat : Unarchive the tomcat file] **************************************
+2018-07-30 01:03:20,637 p=10096 u=akila |  fatal: [localhost]: FAILED! => {"changed": false, "msg": "dest '/home/akila/anslab/tomcat' must be an existing dir"}
+2018-07-30 01:03:20,640 p=10096 u=akila |  	to retry, use: --limit @/home/akila/anslab/roles/tomcat/tomcat.retry
+
+2018-07-30 01:03:20,640 p=10096 u=akila |  PLAY RECAP *********************************************************************
+2018-07-30 01:03:20,641 p=10096 u=akila |  localhost                  : ok=1    changed=0    unreachable=0    failed=1   
+2018-07-30 01:03:32,882 p=10176 u=akila |   [WARNING]: Ignoring invalid attribute: mode
+
+2018-07-30 01:03:33,116 p=10176 u=akila |  PLAY [localhost] ***************************************************************
+2018-07-30 01:03:33,147 p=10176 u=akila |  TASK [Gathering Facts] *********************************************************
+2018-07-30 01:03:34,119 p=10176 u=akila |  ok: [localhost]
+2018-07-30 01:03:34,172 p=10176 u=akila |  TASK [tomcat : Unarchive the tomcat file] **************************************
+2018-07-30 01:03:35,551 p=10176 u=akila |  changed: [localhost]
+2018-07-30 01:03:35,618 p=10176 u=akila |  TASK [tomcat : Start tomcat service] *******************************************
+2018-07-30 01:03:36,117 p=10176 u=akila |  changed: [localhost]
+2018-07-30 01:03:36,123 p=10176 u=akila |  PLAY RECAP *********************************************************************
+2018-07-30 01:03:36,124 p=10176 u=akila |  localhost                  : ok=3    changed=2    unreachable=0    failed=0   
+2018-07-30 01:19:02,836 p=10534 u=akila |  ERROR! Syntax Error while loading YAML.
+  did not find expected <document start>
+
+The error appears to have been in '/home/akila/anslab/roles/tomcat/handlers/main.yml': line 2, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  - Start tomcat service
+mode: 0755
+^ here
+
+2018-07-30 01:19:37,759 p=10548 u=akila |  ERROR! Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to have been in '/home/akila/anslab/roles/tomcat/handlers/main.yml': line 2, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- Start tomcat service
+mode: 0755
+^ here
+
+2018-07-30 01:20:12,506 p=10563 u=akila |  ERROR! Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to have been in '/home/akila/anslab/roles/tomcat/handlers/main.yml': line 2, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- Start tomcat service
+  mode: 0755
+      ^ here
+
+2018-07-30 01:21:37,124 p=10577 u=akila |  ERROR! Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to have been in '/home/akila/anslab/roles/tomcat/handlers/main.yml': line 2, column 8, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- Start tomcat service
+  shell: "{{file_home}}/tomcat/apache-tomcat-8.5.32/bin/startup.sh"
+       ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes.  Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2018-07-30 01:24:53,433 p=10593 u=akila |  ERROR! Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to have been in '/home/akila/anslab/roles/tomcat/handlers/main.yml': line 2, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+- Start tomcat service
+  mode: 0755
+      ^ here
+
+2018-07-30 01:26:02,908 p=10603 u=akila |   [WARNING]: Could not match supplied host pattern, ignoring:
+roles/tomcat/handlers/main.yml
+
+2018-07-30 01:26:02,909 p=10603 u=akila |   [WARNING]: No hosts matched, nothing to do
+
+2018-07-30 01:26:03,012 p=10603 u=akila |  ERROR! No argument passed to command module (did you mean to run ansible-playbook?)
+2018-07-30 01:30:00,916 p=10642 u=akila |   [WARNING]: Ignoring invalid attribute: mode
+
+2018-07-30 01:30:01,292 p=10642 u=akila |  PLAY [localhost] ***************************************************************
+2018-07-30 01:30:01,344 p=10642 u=akila |  TASK [Gathering Facts] *********************************************************
+2018-07-30 01:30:02,753 p=10642 u=akila |  ok: [localhost]
+2018-07-30 01:30:02,825 p=10642 u=akila |  TASK [tomcat : Unarchive the tomcat file] **************************************
+2018-07-30 01:30:05,236 p=10642 u=akila |  changed: [localhost]
+2018-07-30 01:30:05,237 p=10642 u=akila |  RUNNING HANDLER [tomcat : Start tomcat service] ********************************
+2018-07-30 01:30:06,018 p=10642 u=akila |  changed: [localhost]
+2018-07-30 01:30:06,024 p=10642 u=akila |  PLAY RECAP *********************************************************************
+2018-07-30 01:30:06,024 p=10642 u=akila |  localhost                  : ok=3    changed=2    unreachable=0    failed=0   
+2018-07-31 15:42:19,308 p=6073 u=akila |   [WARNING]: Ignoring invalid attribute: mode
+
+2018-07-31 15:42:19,505 p=6073 u=akila |  PLAY [localhost] *****************************************************************************************************************************
+2018-07-31 15:42:19,518 p=6073 u=akila |  TASK [Gathering Facts] ***********************************************************************************************************************
+2018-07-31 15:42:20,402 p=6073 u=akila |  ok: [localhost]
+2018-07-31 15:42:20,442 p=6073 u=akila |  TASK [Create folder] *************************************************************************************************************************
+2018-07-31 15:42:20,812 p=6073 u=akila |  changed: [localhost]
+2018-07-31 15:42:20,813 p=6073 u=akila |  RUNNING HANDLER [Create files inside the folder] *********************************************************************************************
+2018-07-31 15:42:21,093 p=6073 u=akila |  changed: [localhost]
+2018-07-31 15:42:21,095 p=6073 u=akila |  PLAY RECAP ***********************************************************************************************************************************
+2018-07-31 15:42:21,096 p=6073 u=akila |  localhost                  : ok=3    changed=2    unreachable=0    failed=0   
+2018-07-31 21:21:19,011 p=8222 u=akila |  ERROR! the playbook: roles/tomcat/tomcat. could not be found
+2018-07-31 21:21:22,836 p=8227 u=akila |   [WARNING]: Ignoring invalid attribute: mode
+
+2018-07-31 21:21:23,142 p=8227 u=akila |  PLAY [localhost] ***************************************************************
+2018-07-31 21:21:23,165 p=8227 u=akila |  TASK [Gathering Facts] *********************************************************
+2018-07-31 21:21:24,163 p=8227 u=akila |  ok: [localhost]
+2018-07-31 21:21:24,269 p=8227 u=akila |  TASK [tomcat : Unarchive the tomcat file] **************************************
+2018-07-31 21:21:30,147 p=8227 u=akila |  ok: [localhost]
+2018-07-31 21:21:30,262 p=8227 u=akila |  TASK [tomcat : Change the Port address] ****************************************
+2018-07-31 21:21:30,883 p=8227 u=akila |  changed: [localhost]
+2018-07-31 21:21:30,884 p=8227 u=akila |  RUNNING HANDLER [tomcat : Start tomcat service] ********************************
+2018-07-31 21:21:31,315 p=8227 u=akila |  changed: [localhost]
+2018-07-31 21:21:31,322 p=8227 u=akila |  PLAY RECAP *********************************************************************
+2018-07-31 21:21:31,322 p=8227 u=akila |  localhost                  : ok=4    changed=2    unreachable=0    failed=0   
+2018-07-31 21:23:34,215 p=8473 u=akila |   [WARNING]: Ignoring invalid attribute: mode
+
+2018-07-31 21:23:34,397 p=8473 u=akila |  PLAY [localhost] *****************************************************************************************************************************
+2018-07-31 21:23:34,411 p=8473 u=akila |  TASK [Gathering Facts] ***********************************************************************************************************************
+2018-07-31 21:23:35,173 p=8473 u=akila |  ok: [localhost]
+2018-07-31 21:23:35,193 p=8473 u=akila |  TASK [tomcat : Unarchive the tomcat file] ****************************************************************************************************
+2018-07-31 21:23:36,280 p=8473 u=akila |  changed: [localhost]
+2018-07-31 21:23:36,300 p=8473 u=akila |  TASK [tomcat : Change the Port address] ******************************************************************************************************
+2018-07-31 21:23:36,761 p=8473 u=akila |  changed: [localhost]
+2018-07-31 21:23:36,764 p=8473 u=akila |  RUNNING HANDLER [tomcat : Start tomcat service] **********************************************************************************************
+2018-07-31 21:23:37,130 p=8473 u=akila |  changed: [localhost]
+2018-07-31 21:23:37,134 p=8473 u=akila |  PLAY RECAP ***********************************************************************************************************************************
+2018-07-31 21:23:37,134 p=8473 u=akila |  localhost                  : ok=4    changed=3    unreachable=0    failed=0   
+2018-07-31 21:25:16,518 p=8703 u=akila |   [WARNING]: Ignoring invalid attribute: mode
+
+2018-07-31 21:25:16,687 p=8703 u=akila |  PLAY [localhost] *****************************************************************************************************************************
+2018-07-31 21:25:16,699 p=8703 u=akila |  TASK [Gathering Facts] ***********************************************************************************************************************
+2018-07-31 21:25:17,430 p=8703 u=akila |  ok: [localhost]
+2018-07-31 21:25:17,450 p=8703 u=akila |  TASK [tomcat : Unarchive the tomcat file] ****************************************************************************************************
+2018-07-31 21:25:18,586 p=8703 u=akila |  changed: [localhost]
+2018-07-31 21:25:18,588 p=8703 u=akila |  RUNNING HANDLER [tomcat : Start tomcat service] **********************************************************************************************
+2018-07-31 21:25:19,014 p=8703 u=akila |  changed: [localhost]
+2018-07-31 21:25:19,022 p=8703 u=akila |  PLAY RECAP ***********************************************************************************************************************************
+2018-07-31 21:25:19,023 p=8703 u=akila |  localhost                  : ok=3    changed=2    unreachable=0    failed=0   
+2018-07-31 21:29:39,474 p=8937 u=akila |   [WARNING]: Ignoring invalid attribute: mode
+
+2018-07-31 21:29:39,644 p=8937 u=akila |  PLAY [localhost] *****************************************************************************************************************************
+2018-07-31 21:29:39,659 p=8937 u=akila |  TASK [Gathering Facts] ***********************************************************************************************************************
+2018-07-31 21:29:40,423 p=8937 u=akila |  ok: [localhost]
+2018-07-31 21:29:40,442 p=8937 u=akila |  TASK [tomcat : Unarchive the tomcat file] ****************************************************************************************************
+2018-07-31 21:29:41,422 p=8937 u=akila |  ok: [localhost]
+2018-07-31 21:29:41,425 p=8937 u=akila |  PLAY RECAP ***********************************************************************************************************************************
+2018-07-31 21:29:41,425 p=8937 u=akila |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2018-07-31 21:30:36,776 p=9056 u=akila |   [WARNING]: Ignoring invalid attribute: mode
+
+2018-07-31 21:30:37,086 p=9056 u=akila |  PLAY [localhost] *****************************************************************************************************************************
+2018-07-31 21:30:37,110 p=9056 u=akila |  TASK [Gathering Facts] ***********************************************************************************************************************
+2018-07-31 21:30:38,044 p=9056 u=akila |  ok: [localhost]
+2018-07-31 21:30:38,063 p=9056 u=akila |  TASK [tomcat : Unarchive the tomcat file] ****************************************************************************************************
+2018-07-31 21:30:39,010 p=9056 u=akila |  ok: [localhost]
+2018-07-31 21:30:39,015 p=9056 u=akila |  PLAY RECAP ***********************************************************************************************************************************
+2018-07-31 21:30:39,015 p=9056 u=akila |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2018-07-31 21:34:12,777 p=9200 u=akila |   [WARNING]: Ignoring invalid attribute: mode
+
+2018-07-31 21:34:12,983 p=9200 u=akila |  PLAY [localhost] *****************************************************************************************************************************
+2018-07-31 21:34:12,997 p=9200 u=akila |  TASK [Gathering Facts] ***********************************************************************************************************************
+2018-07-31 21:34:13,717 p=9200 u=akila |  ok: [localhost]
+2018-07-31 21:34:13,736 p=9200 u=akila |  TASK [tomcat : Unarchive the tomcat file] ****************************************************************************************************
+2018-07-31 21:34:15,353 p=9200 u=akila |  changed: [localhost]
+2018-07-31 21:34:15,354 p=9200 u=akila |  RUNNING HANDLER [tomcat : Start tomcat service] **********************************************************************************************
+2018-07-31 21:34:15,685 p=9200 u=akila |  changed: [localhost]
+2018-07-31 21:34:15,686 p=9200 u=akila |  RUNNING HANDLER [tomcat : Deploy war file] ***************************************************************************************************
+2018-07-31 21:34:17,911 p=9200 u=akila |  changed: [localhost]
+2018-07-31 21:34:17,918 p=9200 u=akila |  PLAY RECAP ***********************************************************************************************************************************
+2018-07-31 21:34:17,918 p=9200 u=akila |  localhost                  : ok=4    changed=3    unreachable=0    failed=0   

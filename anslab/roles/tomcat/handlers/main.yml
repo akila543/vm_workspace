@@ -1,0 +1,7 @@
+- name:  Start tomcat service
+  mode: 0755
+  shell: "{{file_home}}/tomcat/apache-tomcat-8.5.32/bin/startup.sh"
+- name: Deploy war file
+  copy:
+    src: "{{file_home}}/Bookstore.war"
+    dest: "{{file_home}}/tomcat/apache-tomcat-8.5.32/webapps"

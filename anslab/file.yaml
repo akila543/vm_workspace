@@ -1,0 +1,20 @@
+- hosts: localhost
+
+  vars:
+  -  file_home: /home/akila/anslab
+
+  tasks:
+  - name:  Create folder
+    mode: 0755
+    file:
+      path: "{{file_home}}/NEWSAMPLE"
+      state: directory
+    notify:
+    - Create files inside the folder
+ 
+  handlers:
+  - name: Create files inside the folder
+    mode: 0755
+    file:
+     path: "{{file_home}}/NEWSAMPLE/newfile"
+     state: touch

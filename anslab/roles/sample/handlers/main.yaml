@@ -1,0 +1,4 @@
+- name: Create files inside the folder
+  file:
+    path: "{{file_home}}/NEWSAMPLE/file1"
+    state: touch

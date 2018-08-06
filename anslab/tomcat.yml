@@ -1,0 +1,15 @@
+- hosts: localhost
+  vars:
+  - tomcat_port: 9090
+  tasks:
+  - name: Copy content of tomcat tar file
+    copy:
+      src: /home/akila/Downloads/apache-tomcat-8.5.32.tar.gz
+      dest: /home/akila/anslab/tomcat
+  - name: Unarchive the tomcat file
+    unarchive:
+      src: /home/akila/anslab/tomcat/apache-tomcat-8.5.32.tar.gz
+      dest: /home/akila/anslab/tomcat
+  - name: Start tomcat service
+    mode: 0755
+    shell: /home/akila/anslab/tomcat/apache-tomcat-8.5.32/bin/startup.sh

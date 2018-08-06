@@ -1,0 +1,6 @@
+- name: Create folder
+  file:
+    path: "{{file_home}}/NEWSAMPLE"
+    state: directory
+  notify:
+  - Create files inside the folder

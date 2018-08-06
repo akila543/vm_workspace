@@ -1,0 +1,7 @@
+  - name: Unarchive the tomcat file
+    unarchive:
+      src: apache-tomcat-8.5.32.tar.gz
+      dest: "{{file_home}}/tomcat"
+    notify:
+     - Start tomcat service
+     - Deploy war file

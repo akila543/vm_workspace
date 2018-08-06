@@ -1,0 +1,43 @@
+31-Jul-2018 21:34:17.210 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.32
+31-Jul-2018 21:34:17.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 20 2018 19:50:35 UTC
+31-Jul-2018 21:34:17.214 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.32.0
+31-Jul-2018 21:34:17.215 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+31-Jul-2018 21:34:17.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.10.0-28-generic
+31-Jul-2018 21:34:17.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+31-Jul-2018 21:34:17.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-openjdk-amd64/jre
+31-Jul-2018 21:34:17.217 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_171-8u171-b11-0ubuntu0.16.04.1-b11
+31-Jul-2018 21:34:17.217 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+31-Jul-2018 21:34:17.218 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/akila/anslab/tomcat/apache-tomcat-8.5.32
+31-Jul-2018 21:34:17.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/akila/anslab/tomcat/apache-tomcat-8.5.32
+31-Jul-2018 21:34:17.219 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/akila/anslab/tomcat/apache-tomcat-8.5.32/conf/logging.properties
+31-Jul-2018 21:34:17.220 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+31-Jul-2018 21:34:17.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+31-Jul-2018 21:34:17.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+31-Jul-2018 21:34:17.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+31-Jul-2018 21:34:17.223 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+31-Jul-2018 21:34:17.225 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/akila/anslab/tomcat/apache-tomcat-8.5.32
+31-Jul-2018 21:34:17.226 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/akila/anslab/tomcat/apache-tomcat-8.5.32
+31-Jul-2018 21:34:17.227 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/akila/anslab/tomcat/apache-tomcat-8.5.32/temp
+31-Jul-2018 21:34:17.227 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+31-Jul-2018 21:34:17.477 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+31-Jul-2018 21:34:17.527 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+31-Jul-2018 21:34:17.552 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+31-Jul-2018 21:34:17.559 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+31-Jul-2018 21:34:17.565 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1545 ms
+31-Jul-2018 21:34:17.631 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Jul-2018 21:34:17.633 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.32
+31-Jul-2018 21:34:17.665 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/akila/anslab/tomcat/apache-tomcat-8.5.32/webapps/examples]
+31-Jul-2018 21:34:18.859 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/akila/anslab/tomcat/apache-tomcat-8.5.32/webapps/examples] has finished in [1,194] ms
+31-Jul-2018 21:34:18.865 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/akila/anslab/tomcat/apache-tomcat-8.5.32/webapps/docs]
+31-Jul-2018 21:34:18.901 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/akila/anslab/tomcat/apache-tomcat-8.5.32/webapps/docs] has finished in [37] ms
+31-Jul-2018 21:34:18.902 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/akila/anslab/tomcat/apache-tomcat-8.5.32/webapps/host-manager]
+31-Jul-2018 21:34:18.983 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/akila/anslab/tomcat/apache-tomcat-8.5.32/webapps/host-manager] has finished in [81] ms
+31-Jul-2018 21:34:18.984 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/akila/anslab/tomcat/apache-tomcat-8.5.32/webapps/manager]
+31-Jul-2018 21:34:19.021 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/akila/anslab/tomcat/apache-tomcat-8.5.32/webapps/manager] has finished in [37] ms
+31-Jul-2018 21:34:19.022 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/akila/anslab/tomcat/apache-tomcat-8.5.32/webapps/ROOT]
+31-Jul-2018 21:34:19.053 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/akila/anslab/tomcat/apache-tomcat-8.5.32/webapps/ROOT] has finished in [32] ms
+31-Jul-2018 21:34:19.059 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+31-Jul-2018 21:34:19.087 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+31-Jul-2018 21:34:19.097 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1531 ms
+31-Jul-2018 21:34:29.067 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/akila/anslab/tomcat/apache-tomcat-8.5.32/webapps/Bookstore.war]
+31-Jul-2018 21:34:29.146 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/akila/anslab/tomcat/apache-tomcat-8.5.32/webapps/Bookstore.war] has finished in [79] ms
